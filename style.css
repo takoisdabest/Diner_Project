@@ -1,0 +1,92 @@
+/* Hexadecimal Color Codes
+#1c1c1c - Dark Gray
+#00281d - Dark Green
+#71c438 - Bright Green
+#be0845 - Pink Red
+#ff932c - Bright Orange
+*/
+/* Basic Reset */
+#customBody {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+#customHeader {
+    background-color:#ff932c; - Bright Orange; /* Dark Gray */
+    color: #ad1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main Content Styling */
+#content {
+    margin: 20px;
+    background-color:#00281d; /* Dark Green */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: darkred; /* Dark Red */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Links */
+#nav {
+    padding: .5em; 
+    text-align: center; 
+    height: 50px; 
+    margin-right: auto; 
+    margin-left: auto; 
+    white-space: nowrap
+}
+#nav ul
+{
+list-style-type: none; 
+padding-left: 0em; 
+display: flex; 
+flex-direction: row; 
+margin: 0px;
+}
+
+#nav li
+{
+padding-top: .5em; 
+padding-bottom: .5em; 
+padding-right: 1em; 
+padding-left: 1em; 
+width: 100%;
+}
+
+a {
+    color: #1c1c1c; /* Dark Gray */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #be0845; /* Pink Red */
+    text-decoration: underline;
+}
+
+#customHR {
+    border: 0;
+    height: 4px;
+    background:#00281d;
+    background-image: linear-gradient(to right, #71c438, #00281d, #71c438);
+}
+
+/* Example Class */
+.example-class {
+    background-color: darkgray; /* Dark Gray */
+    border: 2px solid darkgreen; /* Dark Green */
+    padding: 10px;
+    color: darkred; /* Dark Red */
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
