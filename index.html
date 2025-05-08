@@ -1,125 +1,224 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>The Black Pearl</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>The Black Pearl</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body id="customBody">
-  <div id="customHeader">
-    <div id="logo">
-      <a href="index.html"><img src="logo.png" alt="The Black Pearl Logo"></a>
-      <h1><a href="index.html">The Black Pearl</a></h1>
-      </div>
-      <div id="nav">
-      <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="checkout.html">Checkout</a></li>
-      <li><a href="reservations.html">Reservations</a></li>
-      </ul>
-      </div>
-      <hr id="customHR">
+  <body id="customBody">
+    <!--Header-->
+    <div id="customHeader" class="pb-3">
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg p-3 fs-3 w-100">
+        <div class="container-fluid">
+          <!--Logo and Name-->
+          <a id="headerTitle" class="navbar-brand fs-1 text-start" href="index.html">
+            <img 
+              src="https://cdn.glitch.global/a647ea25-7129-43d9-ba01-78a829ffc534/The%20Black.png?v=1745469799252" 
+              alt="" 
+              width="100" 
+              height="100" 
+              class="d-inline-block align-text-middle">
+            The Black Pearl
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Navbar Links-->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="homeLink" class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="menuLink" class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a id ="checkoutLink" class="nav-link" href="checkout.html">Checkout</a>
+              </li>
+              <li class="nav-item">
+                <a id ="reservationsLink" class="nav-link" href="reservations.html">Reservations</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
 
-  <div id="content">
-    <h2>Welcome to The Black Pearl!</h2>
-    <p>Where Tropical Vibes Meet Gothic Elegance: Step into an unforgettable fusion of sun-soaked paradise and shadowy allure. The Black Pearl is not your typical island getaway—it's an immersive experience where the serenity of tropical margaritas meets the dramatic charm of gothic sophistication.
-      Picture a candlelit oasis adorned with rich, dark decor and a touch of vintage intrigue, where every corner tells a story. Sip on our handcrafted signature cocktails, each inspired by the mystique of the gothic aesthetic and the vibrant flavors of the tropics. Indulge in our menu of elevated island cuisine, crafted to delight both your taste buds and your imagination.
-      Whether you're here for an enchanting night out, a unique venue for an event, or simply to unwind in a space that's equal parts brooding and beachy, The Black Pearl offers an escape like no other.
-      Join us for a journey that’s bold, beautiful, and entirely unforgettable—because paradise isn't just sunshine and rainbows; it's also mysterious and magnificent.
+    <div id="content" class="mt-5 mb-5">
+      <h2 class="mx-auto text-center p-5 fs-1">Welcome to The Black Pearl!</h2>
+      <img
+        class="rounded mx-auto d-block w-50"
+        src="https://cdn.glitch.global/a647ea25-7129-43d9-ba01-78a829ffc534/theBlackPearlPicture.png?v=1745472605387"
+      />
+      <p id="intro" class="text-light w-75 fs-6 fw-light p-3 mx-auto">
+        Where Tropical Vibes Meet Gothic Elegance: Step into an unforgettable
+        fusion of sun-soaked paradise and shadowy allure. The Black Pearl is not
+        your typical island getaway—it's an immersive experience where the
+        serenity of tropical margaritas meets the dramatic charm of gothic
+        sophistication. Sip on our handcrafted signature cocktails, indulge in
+        our menu of elevated yet familiar cuisine, and let the vacation vibes take you away. 
+        Join us for a journey that’s bold, beautiful, and entirely
+        unforgettable—because paradise isn't just sunshine and rainbows; it's
+        also mysterious and magnificent.
+      </p>
 
- <!--Let's talk more about the restuarant here--></p>
-    
-    <br>
-    
-    <h2>Our Specials</h2>
-    <!-- Carousel -->
-    <div id="carouselSpecials" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselSpecials" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Special 1"></button>
-        <button type="button" data-bs-target="#carouselSpecials" data-bs-slide-to="1" aria-label="Special 2"></button>
-        <button type="button" data-bs-target="#carouselSpecials" data-bs-slide-to="2" aria-label="Special 3"></button>
+      <br />
+
+      <h2 class="mx-auto text-center p-5">Our Specials</h2>
+      <!-- Carousel -->
+      <div
+        id="carouselSpecials"
+        class="carousel slide carousel-fade w-50 mx-auto"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselSpecials"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Special 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselSpecials"
+            data-bs-slide-to="1"
+            aria-label="Special 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselSpecials"
+            data-bs-slide-to="2"
+            aria-label="Special 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- Special 1 -->
+          <div class="carousel-item active">
+            <img
+              src="https://cdn.glitch.global/a647ea25-7129-43d9-ba01-78a829ffc534/macAndCheese.jpg?v=1745460444681"
+              class="d-block w-100"
+              alt="A bowl of Mac and Cheese"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">Mac n' Cheese</h5>
+              <p class="text-light">
+                A creamy bowl of macaroni and cheese topped with toasted
+                breadcrumbs. Choose your own toppings and customize!
+              </p>
+            </div>
+          </div>
+          <!-- Special 2 -->
+          <div class="carousel-item">
+            <img 
+              src="https://cdn.glitch.global/a647ea25-7129-43d9-ba01-78a829ffc534/steak.jpg?v=1745460473271" 
+              class="d-block w-100" 
+              alt="A steak" 
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">Flame Grilled Steak</h5>
+              <p class="text-light">
+                A tender flame grilled steak. Available with the side of your
+                choosing!
+              </p>
+            </div>
+          </div>
+          <!-- Special 3 -->
+          <div class="carousel-item">
+            <img
+              src="https://cdn.glitch.global/a647ea25-7129-43d9-ba01-78a829ffc534/burger.jpg?v=1745460422980"
+              class="d-block w-100"
+              alt="A burger"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">Captain Jack Burger</h5>
+              <p class="text-light">
+                A juicy burger topped with onions, pepper jack cheese, and our
+                housemade whiskey barbecue sauce. Available with a gluten free
+                bun!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselSpecials"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselSpecials"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-        <!-- Special 1 -->
-        <div class="carousel-item active">
-          <img src="macAndCheese.jpg" class="d-block w-100" alt="A bowl of Mac and Cheese">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Mac & Cheese</h5>
-            <p>A creamy bowl of macaroni and cheese topped with toasted breadcrumbs. Choose your own toppings and customize!</p>
-          </div>
-        </div>
-        <!-- Special 2 -->
-        <div class="carousel-item">
-          <img src="steak.jpg" class="d-block w-100" alt="A steak">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Flame Grilled Steak</h5>
-            <p>A tender flame grilled steak. Available with the side of your choosing!</p>
-          </div>
-        </div>
-        <!-- Special 3 -->
-        <div class="carousel-item">
-          <img src="burger.jpg" class="d-block w-100" alt="A burger">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Captain Jack Burger</h5>
-            <p>A juicy burger topped with onions, pepper jack cheese, and our housemade whiskey barbecue sauce. Available with a gluten free bun!</p>
-          </div>
-        </div>
-      </div>
-      <!-- Carousel Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSpecials" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselSpecials" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+
+      <br/>
+
+      <h2 class="mx-auto text-center p-5 mt-5">Hours and Where To Find Us!</h2>
+      <!--We are open from 11:00 AM to 10:00 PM every day. You can find us at 12345 Black Pearl Way, Treasure Island, FL 33706.-->
+      <table class="mx-auto text-center w-50 m-5 mt-3">
+        <tr>
+          <th class="text-start fs-3 fw-bold">Monday</th>
+          <td class="text-end fs-3">9:00 AM - 10:00 PM</td>
+        </tr>
+        <tr>
+          <th class="text-start fs-3 fw-bold">Tuesday</th>
+          <td class="text-end fs-3">9:00 AM - 10:00 PM</td>
+        </tr>
+        <tr>
+          <th class="text-start fs-3 fw-bold">Wednesday</th>
+          <td class="text-end fs-3">9:00 AM - 10:00 PM</td>
+        </tr>
+        <tr>
+          <th class="text-start fs-3 fw-bold">Thursday</th>
+          <td class="text-end fs-3">9:00 AM - 10:00 PM</td>
+        </tr>
+        <tr>
+          <th class="text-start fs-3 fw-bold">Friday</th>
+          <td class="text-end fs-3">11:00 AM - 12:00 AM</td>
+        </tr>
+        <tr>
+          <th class="text-start fs-3 fw-bold">Saturday</th>
+          <td class="text-end fs-3">11:00 AM - 12:00 AM</td>
+        </tr>
+        <tr>
+          <th class="text-start fs-3 fw-bold">Sunday</th>
+          <td class="text-end fs-3">11:00 AM - 10:00 PM</td>
+        </tr>
+      </table>
+      <p class="mx-auto text-center fs-3 fst-italic text-light m-5 mt-3">
+        Come down and visit us at 12345 Black Pearl Way, Treasure Island, FL 33706!
+      </p>
     </div>
-
-    <br>
-
-    <h2>Hours and Where To Find Us!</h2>
-    <!--We are open from 11:00 AM to 10:00 PM every day. You can find us at 12345 Black Pearl Way, Treasure Island, FL 33706.-->
-    <table>
-      <tr>
-        <th>Monday</th>
-        <td>9:00 AM - 10:00 PM</td>
-      </tr>
-      <tr>
-        <th>Tuesday</th>
-        <td>9:00 AM - 10:00 PM</td>
-      </tr>
-      <tr>
-        <th>Wednesday</th>
-        <td>9:00 AM - 10:00 PM</td>
-      </tr>
-      <tr>
-        <th>Thursday</th>
-        <td>9:00 AM - 10:00 PM</td>
-      </tr>
-      <tr>
-        <th>Friday</th>
-        <td>11:00 AM - 12:00 AM</td>
-      </tr>
-      <tr>
-        <th>Saturday</th>
-        <td>11:00 AM - 12:00 AM</td>
-      </tr>
-      <tr>
-        <th>Sunday</th>
-        <td>11:00 AM - 10:00 PM</td>
-      </tr>
-    </table>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
-
-</body>
-
+    <footer class="mx-auto text-center fst-italic fs-5 p-5">
+      <p>
+        &copy 2025 The Black Pearl for SDEV165
+      </p>
+    </footer>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+  </body>
 </html>
