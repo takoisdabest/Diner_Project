@@ -1,92 +1,126 @@
-/* Hexadecimal Color Codes
-#1c1c1c - Dark Gray
-#00281d - Dark Green
-#71c438 - Bright Green
-#be0845 - Pink Red
-#ff932c - Bright Orange
-*/
+/* Hexadecimal Color Codes */
+:root {
+    --dark-gray: #1c1c1c;
+    --dark-green: #00281d;
+    --mellow-green: #447e44; 
+    --dark-pink: #990033;
+    --dark-dark-pink: #3f000c;
+    --orange: #ff6600;
+    --light-blue: #ccffff;
+    --aqua: #33ccff;
+}
+
 /* Basic Reset */
 #customBody {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Monaco', monospace;
+    background: linear-gradient(to bottom, #ccffff 0%, #33ccff 100%);
+    color: white;
 }
 
 /* Header Styling */
 #customHeader {
-    background-color:#ff932c; - Bright Orange; /* Dark Gray */
-    color: #ad1f1f;
+    background: linear-gradient(to right, #ff6600 0%, #990033 100%);
+    color: white;
     padding: 20px;
-    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+#headerTitle {
+  font-family: 'Copperplate', fantasy;
+  color: #1c1c1c;
+}
+
+/*Nav Styling*/
+#homeLink{
+  color: #1c1c1c;
+  font-family: 'Monaco', monospace;
+}
+
+#homeLink:hover{
+  color: #33ccff;
+}
+
+#menuLink{
+  color: #1c1c1c;
+  font-family: 'Monaco', monospace;
+}
+
+#menuLink:hover{
+  color: #33ccff;
+}
+
+#checkoutLink{
+  color: #1c1c1c;
+  font-family: 'Monaco', monospace;
+}
+
+#checkoutLink:hover{
+  color: #33ccff;
+}
+
+#reservationsLink{
+  color: #1c1c1c;
+  font-family: 'Monaco', monospace;
+}
+
+#reservationsLink:hover{
+  color: #33ccff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    opacity: 1;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+}
+
 
 /* Main Content Styling */
 #content {
-    margin: 20px;
-    background-color:#00281d; /* Dark Green */
+    margin: 20px auto;
+    background-color: #1c1c1c;
     color: white;
     padding: 15px;
     border-radius: 10px;
+    max-width: 90%;
+}
+
+/*Introduction Paragraph*/
+#intro {
 }
 
 /* Footer Styling */
 footer {
-    background-color: darkred; /* Dark Red */
-    color: white;
-    padding: 10px;
-    text-align: center;
 }
 
-/* Links */
-#nav {
-    padding: .5em; 
-    text-align: center; 
-    height: 50px; 
-    margin-right: auto; 
-    margin-left: auto; 
-    white-space: nowrap
-}
-#nav ul
-{
-list-style-type: none; 
-padding-left: 0em; 
-display: flex; 
-flex-direction: row; 
-margin: 0px;
-}
 
-#nav li
-{
-padding-top: .5em; 
-padding-bottom: .5em; 
-padding-right: 1em; 
-padding-left: 1em; 
-width: 100%;
-}
-
-a {
-    color: #1c1c1c; /* Dark Gray */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #be0845; /* Pink Red */
-    text-decoration: underline;
-}
-
+/* Divider */
 #customHR {
     border: 0;
     height: 4px;
-    background:#00281d;
-    background-image: linear-gradient(to right, #71c438, #00281d, #71c438);
+    background: linear-gradient(to right, #990033 0%, #ff6600 100%);
+}
+
+/* Text Styling */
+h5, p {
+    color: var(--dark-gray);
+}
+
+/*H2 Font*/
+h2 {
+  font-family: 'Copperplate', fantasy;
 }
 
 /* Example Class */
 .example-class {
-    background-color: darkgray; /* Dark Gray */
-    border: 2px solid darkgreen; /* Dark Green */
+    background-color: var(--dark-gray);
+    border: 2px solid var(--dark-green);
     padding: 10px;
-    color: darkred; /* Dark Red */
+    color: var(--pink-red);
     margin-bottom: 20px;
     border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
